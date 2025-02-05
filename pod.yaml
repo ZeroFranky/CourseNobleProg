@@ -6,7 +6,7 @@ metadata:
 
 spec:
   imagePullSecrets:
-    - name: ghcr-pull-secret-new
+    - name: ghcr-pull-secret
   containers:
     - name: nginx
       image: ${IMAGE}

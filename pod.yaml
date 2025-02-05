@@ -3,7 +3,10 @@ kind: Pod
 metadata:
   name: nginx-pod
   namespace: zerofranky-dev
+
 spec:
+  imagePullSecrets:
+    - name: ghcr-pull-secret-new
   containers:
     - name: nginx
       image: ${IMAGE}

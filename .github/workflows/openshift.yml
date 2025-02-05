@@ -140,6 +140,6 @@ jobs:
         namespace: ${{ env.OPENSHIFT_NAMESPACE }}
         
     - name: my deployment
-      run: 
+      run: |
         echo ${{ steps.push-image.outputs.registry-path}}
         oc get pods

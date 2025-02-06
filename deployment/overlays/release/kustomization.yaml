@@ -4,15 +4,15 @@ patches:
 - path: configmap-patch.yaml
   target:
     kind: ConfigMap
-    name: coursenobleprog
+    name: zerofranky
 - path: deployment-w-storage-patch.yaml
   target:
     kind: Deployment
-    name: coursenobleprog
+    name: zerofranky
 - path: service-patch.yaml
   target:
     kind: Service
-    name: coursenobleprog
+    name: zerofranky
 
 resources: 
 - ../../base
